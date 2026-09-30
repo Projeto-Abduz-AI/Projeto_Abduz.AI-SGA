@@ -4,6 +4,10 @@ Projeto acadêmico de Engenharia de Software — fase Discovery.
 
 ## Backlog
 
+**[Abrir quadro Kanban — Abduz.AI](https://github.com/orgs/Projeto-Abduz-AI/projects/4/views/1)**
+
+O GitHub Project contém as 35 histórias como Issues, com detalhes nos cartões e as colunas de acompanhamento. Os arquivos abaixo são documentação de apoio.
+
 [Abrir o backlog — Epic → Feature → User Story](docs/discovery/backlog/README.md)
 
 O backlog contém **9 épicos, 17 features e 35 histórias**, com rastreabilidade dos **88 requisitos funcionais** e tratamento dos **5 requisitos não funcionais** consolidados.
