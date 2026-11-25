@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#ffb95f","inverse-on-surface":"#2c303a","surface-tint":"#4edea3","surface-container-low":"#181b25","outline":"#86948a","on-secondary-fixed":"#001f26","secondary-fixed-dim":"#4cd7f6","on-background":"#dfe2ef","surface-container-high":"#262a34","primary-fixed-dim":"#4edea3","primary-fixed":"#6ffbbe","on-secondary":"#003640","on-tertiary":"#472a00","outline-variant":"#3c4a42","on-primary-container":"#00422b","on-secondary-fixed-variant":"#004e5c","on-surface":"#dfe2ef","tertiary-container":"#e29100","primary-container":"#10b981","error-container":"#93000a","surface":"#0f131c","surface-bright":"#353943","background":"#0f131c","surface-dim":"#0f131c","surface-variant":"#31353f","on-secondary-container":"#00424e","surface-container-highest":"#31353f","tertiary-fixed":"#ffddb8","secondary-container":"#03b5d3","surface-container":"#1c1f29","on-surface-variant":"#bbcabf","inverse-surface":"#dfe2ef","error":"#ffb4ab","tertiary-fixed-dim":"#ffb95f","secondary":"#4cd7f6","on-primary":"#003824","on-primary-fixed-variant":"#005236","secondary-fixed":"#acedff","on-error":"#690005","on-tertiary-fixed":"#2a1700","primary":"#4edea3","on-error-container":"#ffdad6","on-tertiary-container":"#523200","inverse-primary":"#006c49","on-tertiary-fixed-variant":"#653e00","surface-container-lowest":"#0a0e17","on-primary-fixed":"#002113"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-md":"0.75rem","space-xl":"1.5rem","margin":"1.5rem","gutter-mobile":"0.5rem","margin-mobile":"0.75rem","space-lg":"1rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-xl":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"label-sm":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"body-sm":["Geist"],"headline-md":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"label-md":["JetBrains Mono"],"body-md":["Geist"],"headline-sm":["Space Grotesk"],"body-lg":["Geist"],"telemetry-num":["JetBrains Mono"]},"fontSize":{"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.06em","fontWeight":"500"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"400"}],"telemetry-num":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><img alt="Abduz.AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqgdfm2LOnjM6ak0xEi-oJHApqxeJqIuN6BsBoCYmaubvqfKA4k4vUou5AwkQR4Bjck8BBO4Y1SFn9lJ0jWcjVWba31Ph5KcYRuYodk6xn49wYmC0DQULHyH7511s7dcCnibyzVwTurcjJcMFQorQSBPWcsr1jSYORQbj61uLC3eLJ4jAxfP5TKeyCu3tFgteXzi49wyJO09sltDrhG-ME1oNYhAuYU3Lj7NRBzwrC"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Abduz.AI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-space-xs">Operações v4.2</span></div></div><div class="px-space-md"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Navegação Operacional</div><nav class="mt-space-xs flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="inicio" href="#"><span class="material-symbols-outlined text-primary text-[18px]">terminal</span><span>Início</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="funcionarios" href="#"><span class="material-symbols-outlined text-primary text-[18px]">badge</span><span>Funcionários</span></a><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">rocket</span><span>Naves</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary uppercase tracking-tight">Sprint 2</span></div><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">accessibility_new</span><span>Humanos</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant/60 uppercase tracking-tight">Bloqueado</span></div><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">radar</span><span>Missões</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant/60 uppercase tracking-tight">Bloqueado</span></div><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">history</span><span>Histórico</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant/60 uppercase tracking-tight">Bloqueado</span></div></nav></div></div><div class="px-space-md"><div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Uplink Quântico</span><span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span></div><div class="font-telemetry-num text-telemetry-num text-secondary">NODE-ORBIT-99</div><div class="font-label-sm text-label-sm text-on-surface-variant/70">Criptografia AES-QUANT 512b</div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm px-space-sm py-1 rounded-full bg-surface-container-high"><span class="flex h-2 w-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface tracking-wide uppercase">Sistema Operacional: Nominal</span></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container"><span class="material-symbols-outlined text-secondary text-[14px]">shield</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Segurança Quântica: Ativa</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Comandante Valerius</span><span class="font-label-sm text-label-sm text-primary leading-tight uppercase">Gestor Operacional</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><a class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-variant hover:text-on-surface transition-all font-label-md text-label-md" data-path="login" href="#"><span class="material-symbols-outlined text-[16px] text-error">logout</span><span>Sair</span></a></div></header><main class="relative pt-16 w-full px-space-xl bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Dynamic Glow Scrim Background Overlay -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-xl mb-space-lg">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-24 w-80 h-80 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<!-- Header Section -->
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest px-space-xs py-0.5 rounded bg-surface-container-high">Protocolo Zenith // Sub-rede 04</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Apenas Tripulantes Autorizados</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Gestão de Funcionários &amp; Controle de Acesso</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Administração de tripulantes, cientistas, pilotos e emissão de credenciais de missão.</p>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg bg-surface-container-high">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Efetivo Ativo</span>
+<span class="font-telemetry-num text-telemetry-num text-primary">38 / 42</span>
+</div>
+<div class="h-6 w-px bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Vagas Trator</span>
+<span class="font-telemetry-num text-telemetry-num text-tertiary">04 Lotações</span>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-fixed-dim text-surface font-headline-sm text-headline-sm font-semibold transition-all shadow-[0_0_16px_rgba(78,222,163,0.35)] hover:shadow-[0_0_24px_rgba(78,222,163,0.6)] cursor-pointer" id="btn-novo-func">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>+ Novo Funcionário</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Filter Deck -->
+<div class="mt-space-lg pt-space-md flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md bg-surface-container rounded-lg p-space-sm">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">radar</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md pl-9 pr-space-md py-2 rounded focus:outline-none focus:bg-surface-container-high transition-colors" id="input-search" placeholder="Buscar por nome, matrícula ou login..." type="text"/>
+<span class="absolute right-space-sm top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant/40 hidden sm:inline">⌘K</span>
+</div>
+<!-- Dropdown Filters -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Function Filter -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-on-surface-variant text-[16px] pointer-events-none">filter_alt</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md pl-7 pr-7 py-2 rounded focus:outline-none cursor-pointer appearance-none" id="filter-funcao">
+<option value="all">Todas as Funções</option>
+<option value="Gestor">Gestor</option>
+<option value="Supervisor">Supervisor</option>
+<option value="Piloto">Piloto</option>
+<option value="Abduzidor">Abduzidor</option>
+<option value="Pesquisador">Pesquisador</option>
+<option value="Cientista">Cientista</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-on-surface-variant text-[16px] pointer-events-none">sensors</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md pl-7 pr-7 py-2 rounded focus:outline-none cursor-pointer appearance-none" id="filter-situacao">
+<option value="all">Todos os Estados</option>
+<option value="Ativo">Ativo</option>
+<option value="Inativo">Inativo</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Reload / Sync CTA -->
+<button class="p-2 rounded bg-surface-container-lowest text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" id="btn-sync" title="Ressincronizar Uplink">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operational HUD Matrix Table -->
+<div class="w-full bg-surface-container-low rounded-xl overflow-hidden shadow-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Tripulante // Identidade</th>
+<th class="py-space-sm px-space-md">Matrícula</th>
+<th class="py-space-sm px-space-md">Função Operacional</th>
+<th class="py-space-sm px-space-md">Cargo de Bordo</th>
+<th class="py-space-sm px-space-md">Situação</th>
+<th class="py-space-sm px-space-md text-right">Diretrizes de Acesso</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0" id="employee-table-body">
+<!-- Row 1: Gestor -->
+<tr class="group hover:bg-surface-container-highest transition-colors" data-funcao="Gestor" data-id="ABD-0001" data-situacao="Ativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="Futuristic Grey extraterrestrial officer portrait with obsidian biometric cranial implant, high collar quantum uniform, ethereal purple rim light in deep space command hub." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB1I-buIpqo2axdcUR0s5H2ZG3zpKPJ1_haFmVLJWDUOeWclJaB0OgkFukaSUYrdMMEFfudahLq9mQQTarFsmdYX8DxkZlsOXyiMX11hdq0K17VImKOFWdCyqtf3D3hq2i6ZxnBaDj2b7iaaL8IQrrJY86ygzjmCylXr5Jq4jca7LS9MpIkR6qLhbr5CwfumYfJFd2-75IqFBEkGngM6el8EG6Owc84YeKH6VCjnhJ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Valerius Vor'Kaelen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">valerius@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-secondary">
+              ABD-0001
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-[#8B5CF6]/20 text-[#c4b5fd]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#8B5CF6]"></span> Gestor
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface font-body-md">
+              Comandante Geral da Frota Órion
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span>Ativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-error-container/30 text-error hover:text-error transition-colors cursor-pointer" title="Inativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Piloto -->
+<tr class="group hover:bg-surface-container-highest transition-colors" data-funcao="Piloto" data-id="ABD-0014" data-situacao="Ativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="Avian humanoid starship navigator with iridescent feathers and holographic cockpit ocular display goggles, deep space ambient blue lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfsSMMHENXzIATDYng53bKrP3Q4WfBg-_EFbIlpoMYNnClOsf7oQQtLsHT0Sc0x-DJPKC4NmrLWlYMB30C6jSvCItBGPu4uks3TXnef2ta0R7Kz-JpmrF1dkx1vLTWyOGxQJi4WblFCT0TCp8FiKURGVV6v1NmKZ-4-_TPhwZ1h6OB8__ZstlhvpXESJEvySuFpvIjTQQQser9cbEe7vnl4jVbDng4ditNBI4c9YUB"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Kryxos Zeta-9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">kryxos.nav@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-secondary">
+              ABD-0014
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-secondary/15 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Piloto
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface font-body-md">
+              Navegador de Hiperespaço Classe 4
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span>Ativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-error-container/30 text-error hover:text-error transition-colors cursor-pointer" title="Inativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Abduzidor -->
+<tr class="group hover:bg-surface-container-highest transition-colors" data-funcao="Abduzidor" data-id="ABD-0029" data-situacao="Ativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0">
+<div class="w-full h-full bg-primary-container/30 text-primary flex items-center justify-center font-label-md font-bold">
+                    ZR
+                  </div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Zorak Ra'Thal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">zorak.field@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-secondary">
+              ABD-0029
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-primary/20 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Abduzidor
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface font-body-md">
+              Operador Sênior de Feixe Trator
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span>Ativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-error-container/30 text-error hover:text-error transition-colors cursor-pointer" title="Inativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Cientista -->
+<tr class="group hover:bg-surface-container-highest transition-colors" data-funcao="Cientista" data-id="ABD-0042" data-situacao="Ativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="Reptilian alien biologist with cybernetic optical lens analyzer inspecting holographic DNA strands, glowing jade laboratory setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZwmzm0khTlDlsReUSKiQyI09Od0bEJAKZJAN_EEu2DWu05DxDxa_ARpEgWXX5nH1_-uXOaMu23WzXv_bw3VJW_4hlG31KxvoNKDCshjlqXlRXU0eE-u-GQUCWG6MUlDFYILq5HYX9mAJ61dOLxuOrj0NPeXq8PX3YKCxVum4ZbIY2cSpnbmG_g1Tr4h_4kN3GsSGJNyh9z65HyM5kZ4R-Xb5L9pKTYdSXkBPWue5i"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Dra. Selys Xandar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">selys.lab@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-secondary">
+              ABD-0042
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-primary-fixed/20 text-primary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span> Cientista
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface font-body-md">
+              Geneticista Humano Especialista
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span>Ativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-error-container/30 text-error hover:text-error transition-colors cursor-pointer" title="Inativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Supervisor -->
+<tr class="group hover:bg-surface-container-highest transition-colors" data-funcao="Supervisor" data-id="ABD-0063" data-situacao="Ativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0">
+<div class="w-full h-full bg-secondary/20 text-secondary flex items-center justify-center font-label-md font-bold">
+                    TA
+                  </div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Torken-Ael</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">torken.ops@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-secondary">
+              ABD-0063
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-secondary-fixed-dim/20 text-secondary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span> Supervisor
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface font-body-md">
+              Inspetor de Quarentena e Camuflagem
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span>Ativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-error-container/30 text-error hover:text-error transition-colors cursor-pointer" title="Inativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Pesquisador (Inativo) -->
+<tr class="group hover:bg-surface-container-highest transition-colors opacity-75" data-funcao="Pesquisador" data-id="ABD-0077" data-situacao="Inativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0 grayscale">
+<img class="w-full h-full object-cover" data-alt="Elderly insectoid extraterrestrial researcher with metallic antennae and bio-organic monocle, dark dim quarantine sector background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWkfU4CSZD88yDcORTPazrUVKiNJyWjuKCtaXC_vxEOgtb4XTsiWr9lo2Bn_n_WTaGjFzm_bP2S03hsZxoyU4VJXHqXXuYpU0y0ruohldeHmcBIDcTlxMM-R7mYlWWvJ_73bDpuHXdtQfjf9l-92XaiLm5DiF958G5sbbQktVWn6tZJJeG1Zk3-s6FaK1PX8hNt-Fjf4Fe1mJpaTCFZ6QXYSNRKqZgog1BXcI8ztm7"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-tertiary transition-colors">Vorg-Mox</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/60">vorg.archive@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-on-surface-variant">
+              ABD-0077
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-tertiary/20 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Pesquisador
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-body-md">
+              Curador de Espécimes Terrestres
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-surface-variant text-on-surface-variant/80">
+<span class="h-2 w-2 rounded-full bg-outline"></span>
+<span>Inativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-primary/20 text-primary hover:text-primary transition-colors cursor-pointer" title="Reativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Abduzidor -->
+<tr class="group hover:bg-surface-container-highest transition-colors" data-funcao="Abduzidor" data-id="ABD-0089" data-situacao="Ativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0">
+<div class="w-full h-full bg-primary/20 text-primary flex items-center justify-center font-label-md font-bold">
+                    LX
+                  </div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Lun-Xia Prime</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">lunxia@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-secondary">
+              ABD-0089
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-primary/20 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Abduzidor
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface font-body-md">
+              Técnico de Contenção de Espécimes
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span>Ativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-error-container/30 text-error hover:text-error transition-colors cursor-pointer" title="Inativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Piloto (Inativo) -->
+<tr class="group hover:bg-surface-container-highest transition-colors opacity-75" data-funcao="Piloto" data-id="ABD-0105" data-situacao="Inativo">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0 grayscale">
+<div class="w-full h-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md font-bold">
+                    O7
+                  </div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Orun-7</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/60">orun7.suspended@abduz.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-telemetry-num text-telemetry-num text-on-surface-variant">
+              ABD-0105
+            </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase font-semibold bg-secondary/15 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Piloto
+              </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-body-md">
+              Condutor de Reconhecimento Orbital
+            </td>
+<td class="py-space-md px-space-md">
+<span class="status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-surface-variant text-on-surface-variant/80">
+<span class="h-2 w-2 rounded-full bg-outline"></span>
+<span>Inativo</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="action-edit p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" title="Editar Tripulante">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="action-toggle-status p-1.5 rounded hover:bg-primary/20 text-primary hover:text-primary transition-colors cursor-pointer" title="Reativar Acesso">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State Fallback -->
+<div class="hidden flex-col items-center justify-center p-space-xl text-center" id="table-empty-state">
+<span class="material-symbols-outlined text-[48px] text-on-surface-variant/40 mb-space-sm">person_off</span>
+<span class="font-headline-md text-headline-md text-on-surface">Nenhum tripulante localizado</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Ajuste os parâmetros do filtro de busca ou função orbital.</p>
+</div>
+<!-- Footer & Pagination -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md bg-surface-container border-t-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Exibindo <span class="text-on-surface font-semibold">1-8</span> de <span class="text-on-surface font-semibold">42</span> funcionários</span>
+<span class="hidden md:inline text-on-surface-variant/40 font-label-sm text-label-sm">|</span>
+<span class="hidden md:inline font-label-sm text-label-sm text-on-surface-variant/80 uppercase">Registro Criptográfico S-09</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface-variant/40 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[18px]">first_page</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface-variant/40 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<div class="flex items-center gap-1 mx-1">
+<button class="w-8 h-8 rounded bg-primary text-surface font-label-md text-label-md font-bold">1</button>
+<button class="w-8 h-8 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors">2</button>
+<button class="w-8 h-8 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors">3</button>
+<span class="font-label-md text-label-md text-on-surface-variant px-1">...</span>
+<button class="w-8 h-8 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors">6</button>
+</div>
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Modal: Adicionar / Editar Funcionário -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md hidden p-space-md" id="modal-employee">
+<div class="w-full max-w-xl bg-surface-container-low rounded-xl p-space-xl shadow-2xl relative">
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase">Emissão de Credenciais de Missão</span>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="modal-title">Cadastrar Novo Tripulante</h2>
+</div>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" id="modal-close">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="form-employee">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nome Completo</label>
+<input class="w-full bg-surface-container text-on-surface font-body-md text-body-md px-space-sm py-2 rounded focus:outline-none focus:bg-surface-container-high" placeholder="Ex: Xylarion V-6" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Matrícula de Bordo</label>
+<input class="w-full bg-surface-container text-secondary font-telemetry-num text-telemetry-num px-space-sm py-2 rounded focus:outline-none focus:bg-surface-container-high" placeholder="Ex: ABD-0120" required="" type="text" value="ABD-0120"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Função Operacional</label>
+<select class="w-full bg-surface-container text-on-surface font-label-md text-label-md px-space-sm py-2 rounded focus:outline-none focus:bg-surface-container-high appearance-none">
+<option value="Abduzidor">Abduzidor</option>
+<option value="Piloto">Piloto</option>
+<option value="Pesquisador">Pesquisador</option>
+<option value="Cientista">Cientista</option>
+<option value="Supervisor">Supervisor</option>
+<option value="Gestor">Gestor</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cargo de Missão</label>
+<input class="w-full bg-surface-container text-on-surface font-body-md text-body-md px-space-sm py-2 rounded focus:outline-none focus:bg-surface-container-high" placeholder="Ex: Operador Tático" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Login Telepático / E-mail</label>
+<input class="w-full bg-surface-container text-on-surface font-body-md text-body-md px-space-sm py-2 rounded focus:outline-none focus:bg-surface-container-high" placeholder="tripulante@abduz.ai" required="" type="email"/>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Autorização Nominal Imediata</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ativar uplink e chaves de acesso a naves ao concluir.</span>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-sm">
+<button class="px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors cursor-pointer" id="modal-cancel" type="button">
+            Cancelar
+          </button>
+<button class="px-space-md py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface font-label-md text-label-md font-semibold transition-all shadow-[0_0_14px_rgba(78,222,163,0.3)] cursor-pointer" type="submit">
+            Gravar Credencial
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-space-lg right-space-lg z-50 flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-surface-container-high shadow-2xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none" id="toast">
+<span class="material-symbols-outlined text-[20px] text-primary" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface" id="toast-message">Operação confirmada</span>
+</div>
+</div>
+<script>
+  (function initEmployeeSystem() {
+    const searchInput = document.getElementById('input-search');
+    const filterFuncao = document.getElementById('filter-funcao');
+    const filterSituacao = document.getElementById('filter-situacao');
+    const tableBody = document.getElementById('employee-table-body');
+    const emptyState = document.getElementById('table-empty-state');
+    const modal = document.getElementById('modal-employee');
+    const btnNovo = document.getElementById('btn-novo-func');
+    const btnModalClose = document.getElementById('modal-close');
+    const btnModalCancel = document.getElementById('modal-cancel');
+    const formEmployee = document.getElementById('form-employee');
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+
+    function showToast(message, isError = false) {
+      toastMsg.textContent = message;
+      toastIcon.textContent = isError ? 'warning' : 'check_circle';
+      toastIcon.className = 'material-symbols-outlined text-[20px] ' + (isError ? 'text-error' : 'text-primary');
+      toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+      }, 3200);
+    }
+
+    function applyFilters() {
+      const query = (searchInput.value || '').toLowerCase().trim();
+      const funcValue = filterFuncao.value;
+      const statValue = filterSituacao.value;
+
+      const rows = tableBody.querySelectorAll('tr');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const func = row.getAttribute('data-funcao');
+        const stat = row.getAttribute('data-situacao');
+
+        const matchesQuery = query === '' || text.includes(query);
+        const matchesFunc = funcValue === 'all' || func === funcValue;
+        const matchesStat = statValue === 'all' || stat === statValue;
+
+        if (matchesQuery && matchesFunc && matchesStat) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    filterFuncao.addEventListener('change', applyFilters);
+    filterSituacao.addEventListener('change', applyFilters);
+
+    // Modal Triggers
+    btnNovo.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+
+    const closeModal = () => modal.classList.add('hidden');
+    btnModalClose.addEventListener('click', closeModal);
+    btnModalCancel.addEventListener('click', closeModal);
+
+    formEmployee.addEventListener('submit', (e) => {
+      e.preventDefault();
+      closeModal();
+      showToast('Nova credencial alienígena gravada com sucesso!');
+    });
+
+    // Row Actions: Status Toggle & Edit
+    tableBody.addEventListener('click', (e) => {
+      const toggleBtn = e.target.closest('.action-toggle-status');
+      if (toggleBtn) {
+        const row = toggleBtn.closest('tr');
+        const currentStatus = row.getAttribute('data-situacao');
+        const badge = row.querySelector('.status-badge');
+        const icon = toggleBtn.querySelector('.material-symbols-outlined');
+
+        if (currentStatus === 'Ativo') {
+          row.setAttribute('data-situacao', 'Inativo');
+          row.classList.add('opacity-75');
+          badge.className = 'status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-surface-variant text-on-surface-variant/80';
+          badge.innerHTML = '<span class="h-2 w-2 rounded-full bg-outline"></span><span>Inativo</span>';
+          toggleBtn.title = 'Reativar Acesso';
+          toggleBtn.className = 'action-toggle-status p-1.5 rounded hover:bg-primary/20 text-primary hover:text-primary transition-colors cursor-pointer';
+          icon.textContent = 'lock_open';
+          showToast(`Acesso de ${row.getAttribute('data-id')} suspenso.`);
+        } else {
+          row.setAttribute('data-situacao', 'Ativo');
+          row.classList.remove('opacity-75');
+          badge.className = 'status-badge inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary';
+          badge.innerHTML = '<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span><span>Ativo</span>';
+          toggleBtn.title = 'Inativar Acesso';
+          toggleBtn.className = 'action-toggle-status p-1.5 rounded hover:bg-error-container/30 text-error hover:text-error transition-colors cursor-pointer';
+          icon.textContent = 'lock';
+          showToast(`Credencial de ${row.getAttribute('data-id')} reativada com uplink seguro.`);
+        }
+      }
+
+      const editBtn = e.target.closest('.action-edit');
+      if (editBtn) {
+        const row = editBtn.closest('tr');
+        const reg = row.getAttribute('data-id');
+        showToast(`Carregando telemetria e permissões de ${reg}...`);
+      }
+    });
+
+    document.getElementById('btn-sync').addEventListener('click', () => {
+      showToast('Sincronização com o Node Orbital concluída (0ms)');
+    });
+  })();
+</script></main></div></body></html>

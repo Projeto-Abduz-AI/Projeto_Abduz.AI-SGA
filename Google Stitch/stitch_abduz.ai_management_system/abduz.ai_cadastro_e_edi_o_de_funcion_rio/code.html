@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#ffb95f","inverse-on-surface":"#2c303a","surface-tint":"#4edea3","surface-container-low":"#181b25","outline":"#86948a","on-secondary-fixed":"#001f26","secondary-fixed-dim":"#4cd7f6","on-background":"#dfe2ef","surface-container-high":"#262a34","primary-fixed-dim":"#4edea3","primary-fixed":"#6ffbbe","on-secondary":"#003640","on-tertiary":"#472a00","outline-variant":"#3c4a42","on-primary-container":"#00422b","on-secondary-fixed-variant":"#004e5c","on-surface":"#dfe2ef","tertiary-container":"#e29100","primary-container":"#10b981","error-container":"#93000a","surface":"#0f131c","surface-bright":"#353943","background":"#0f131c","surface-dim":"#0f131c","surface-variant":"#31353f","on-secondary-container":"#00424e","surface-container-highest":"#31353f","tertiary-fixed":"#ffddb8","secondary-container":"#03b5d3","surface-container":"#1c1f29","on-surface-variant":"#bbcabf","inverse-surface":"#dfe2ef","error":"#ffb4ab","tertiary-fixed-dim":"#ffb95f","secondary":"#4cd7f6","on-primary":"#003824","on-primary-fixed-variant":"#005236","secondary-fixed":"#acedff","on-error":"#690005","on-tertiary-fixed":"#2a1700","primary":"#4edea3","on-error-container":"#ffdad6","on-tertiary-container":"#523200","inverse-primary":"#006c49","on-tertiary-fixed-variant":"#653e00","surface-container-lowest":"#0a0e17","on-primary-fixed":"#002113"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-md":"0.75rem","space-xl":"1.5rem","margin":"1.5rem","gutter-mobile":"0.5rem","margin-mobile":"0.75rem","space-lg":"1rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-xl":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"label-sm":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"body-sm":["Geist"],"headline-md":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"label-md":["JetBrains Mono"],"body-md":["Geist"],"headline-sm":["Space Grotesk"],"body-lg":["Geist"],"telemetry-num":["JetBrains Mono"]},"fontSize":{"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.06em","fontWeight":"500"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"400"}],"telemetry-num":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><img alt="Abduz.AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqgdfm2LOnjM6ak0xEi-oJHApqxeJqIuN6BsBoCYmaubvqfKA4k4vUou5AwkQR4Bjck8BBO4Y1SFn9lJ0jWcjVWba31Ph5KcYRuYodk6xn49wYmC0DQULHyH7511s7dcCnibyzVwTurcjJcMFQorQSBPWcsr1jSYORQbj61uLC3eLJ4jAxfP5TKeyCu3tFgteXzi49wyJO09sltDrhG-ME1oNYhAuYU3Lj7NRBzwrC"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Abduz.AI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-space-xs">Operações v4.2</span></div></div><div class="px-space-md"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Navegação Operacional</div><nav class="mt-space-xs flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="inicio" href="#"><span class="material-symbols-outlined text-primary text-[18px]">terminal</span><span>Início</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="funcionarios" href="#"><span class="material-symbols-outlined text-primary text-[18px]">badge</span><span>Funcionários</span></a><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">rocket</span><span>Naves</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary uppercase tracking-tight">Sprint 2</span></div><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">accessibility_new</span><span>Humanos</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant/60 uppercase tracking-tight">Bloqueado</span></div><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">radar</span><span>Missões</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant/60 uppercase tracking-tight">Bloqueado</span></div><div class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant/40 cursor-not-allowed select-none font-body-md text-body-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] opacity-40">history</span><span>Histórico</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant/60 uppercase tracking-tight">Bloqueado</span></div></nav></div></div><div class="px-space-md"><div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Uplink Quântico</span><span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span></div><div class="font-telemetry-num text-telemetry-num text-secondary">NODE-ORBIT-99</div><div class="font-label-sm text-label-sm text-on-surface-variant/70">Criptografia AES-QUANT 512b</div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm px-space-sm py-1 rounded-full bg-surface-container-high"><span class="flex h-2 w-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface tracking-wide uppercase">Sistema Operacional: Nominal</span></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container"><span class="material-symbols-outlined text-secondary text-[14px]">shield</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Segurança Quântica: Ativa</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Comandante Valerius</span><span class="font-label-sm text-label-sm text-primary leading-tight uppercase">Gestor Operacional</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><a class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-variant hover:text-on-surface transition-all font-label-md text-label-md" data-path="login" href="#"><span class="material-symbols-outlined text-[16px] text-error">logout</span><span>Sair</span></a></div></header><main class="relative pt-16 w-full px-space-xl bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Command & Breadcrumb Strip -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg pt-space-sm">
+<div class="flex flex-col gap-space-xs">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-md text-label-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">badge</span>
+<span>Funcionários</span>
+</a>
+<span class="text-on-surface-variant/40">/</span>
+<span class="text-secondary font-medium">Novo Cadastro / Editar Registro</span>
+</nav>
+<!-- Title -->
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Ficha Cadastral e Credenciamento de Tripulante
+        </h1>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-primary/10 text-primary uppercase font-bold tracking-wider">
+          v4.2 PROD
+        </span>
+</div>
+</div>
+<!-- Telemetry Quick State HUD -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="flex items-center gap-space-sm px-space-md py-1.5 rounded-lg bg-surface-container-high shadow-sm">
+<div class="w-2 h-2 rounded-full bg-primary animate-ping"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sincronização</span>
+<span class="font-telemetry-num text-telemetry-num text-primary leading-tight">ORBIT-SYNC OK</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm px-space-md py-1.5 rounded-lg bg-surface-container shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Protocolo RN-003</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Ativo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Governance Advisory Banner (RN-003) -->
+<div class="mb-space-lg p-space-md rounded-xl bg-surface-container-high relative overflow-hidden shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex items-start gap-space-md pl-space-xs">
+<div class="p-space-xs rounded-lg bg-tertiary/10 text-tertiary mt-0.5 flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Diretriz de Segurança Interplanetária</span>
+<span class="font-label-sm text-label-sm px-space-xs rounded bg-tertiary-container text-on-tertiary font-bold">RN-003</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Alterações cadastrais e credenciais para as funções de <strong class="text-on-surface">Piloto</strong> e <strong class="text-on-surface">Abduzidor</strong> com missões em andamento requerem homologação criptográfica compulsória de um <strong class="text-secondary font-semibold">Supervisor de Frota</strong> antes de surtirem efeito no cluster de telemetria.
+        </p>
+</div>
+</div>
+</div>
+<!-- Primary Multi-pane Grid: Form Canvas & Tactical Assistant -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Form Workspace (Col 8) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Section 1: Dados Pessoais e Operacionais -->
+<section class="bg-surface-container rounded-xl p-space-xl shadow-lg relative">
+<div class="flex items-center justify-between pb-space-md mb-space-lg bg-surface-container-high/40 -mx-space-xl -mt-space-xl px-space-xl pt-space-lg rounded-t-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">person_outline</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface leading-tight">1. Dados Pessoais e Operacionais</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Identificação bio-cibernética &amp; posto</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-mono px-space-sm py-1 rounded bg-surface-container-highest">ETAPA 01/02</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Nome Completo -->
+<div class="flex flex-col gap-space-xs md:col-span-2">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1" for="input-fullname">
+                Nome Completo do Tripulante <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="fullname-feedback">Requer ao menos 2 termos</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">fingerprint</span>
+<input autocomplete="off" class="w-full h-10 pl-10 pr-10 rounded bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:bg-surface-container-high transition-colors outline-none focus:ring-1 focus:ring-secondary" id="input-fullname" placeholder="Ex: Alistair Vance, Xylar-09..." type="text" value="Valerius Prime Zor-El"/>
+<span class="material-symbols-outlined absolute right-3 text-primary text-[18px]" id="fullname-icon">check_circle</span>
+</div>
+</div>
+<!-- Matrícula / Registro -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1" for="input-matricula">
+                Matrícula / Registro <span class="text-error">*</span>
+</label>
+<button class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-0.5" id="btn-regenerate-reg" type="button">
+<span class="material-symbols-outlined text-[13px]">autorenew</span> Auto-gerar
+              </button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">tag</span>
+<input class="w-full h-10 pl-10 pr-space-md rounded bg-surface-container-lowest text-secondary font-telemetry-num text-telemetry-num tracking-wider uppercase focus:bg-surface-container-high transition-colors outline-none focus:ring-1 focus:ring-secondary" id="input-matricula" type="text" value="ABD-0198"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Padrão de frota: ABD-XXXX</span>
+</div>
+<!-- Função (Select Estilizado com as 6 opções obrigatórias) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1" for="select-role">
+                Função Obrigatória <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm px-space-xs rounded bg-surface-container-high text-primary uppercase" id="role-badge">Nível Alfa</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">shield_person</span>
+<select class="w-full h-10 pl-10 pr-10 rounded bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:bg-surface-container-high transition-colors outline-none appearance-none cursor-pointer focus:ring-1 focus:ring-secondary" id="select-role">
+<option selected="" value="Gestor">Gestor</option>
+<option value="Supervisor">Supervisor</option>
+<option value="Piloto">Piloto (Sujeito a RN-003)</option>
+<option value="Abduzidor">Abduzidor (Sujeito a RN-003)</option>
+<option value="Pesquisador">Pesquisador</option>
+<option value="Cientista">Cientista</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px] pointer-events-none">expand_more</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Define hierarquia de acionamento orbital</span>
+</div>
+<!-- Cargo Específico -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="input-custom-role">
+              Cargo Específico / Especialização
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">military_tech</span>
+<input class="w-full h-10 pl-10 pr-space-md rounded bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:bg-surface-container-high transition-colors outline-none focus:ring-1 focus:ring-secondary" id="input-custom-role" placeholder="Ex: Engenheiro de Propulsão Antimatéria" type="text" value="Operador de Tração Quântica"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Identificação nominal no diário de bordo</span>
+</div>
+<!-- Situação Operacional (Toggle / Radio: Ativo ou Inativo) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">
+              Situação Operacional <span class="text-error">*</span>
+</label>
+<div class="flex items-center h-10 gap-space-sm bg-surface-container-lowest p-1 rounded">
+<label class="flex-1 h-full flex items-center justify-center gap-space-xs rounded cursor-pointer transition-all bg-primary-container text-on-primary-container font-semibold" id="label-status-active">
+<input checked="" class="hidden" id="radio-status-active" name="oper_status" type="radio" value="ativo"/>
+<span class="w-2 h-2 rounded-full bg-on-primary-container"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Ativo</span>
+</label>
+<label class="flex-1 h-full flex items-center justify-center gap-space-xs rounded cursor-pointer transition-all text-on-surface-variant hover:text-on-surface" id="label-status-inactive">
+<input class="hidden" id="radio-status-inactive" name="oper_status" type="radio" value="inativo"/>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Inativo</span>
+</label>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70" id="status-hint">Tripulante apto a assumir naves e escalas</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Credenciais de Acesso e Segurança (US-001 & US-003) -->
+<section class="bg-surface-container rounded-xl p-space-xl shadow-lg relative">
+<div class="flex items-center justify-between pb-space-md mb-space-lg bg-surface-container-high/40 -mx-space-xl -mt-space-xl px-space-xl pt-space-lg rounded-t-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">vpn_key</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface leading-tight">2. Credenciais de Acesso e Segurança</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Autenticação biométrica &amp; nó quantico (US-001 / US-003)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-mono px-space-sm py-1 rounded bg-surface-container-highest">ETAPA 02/02</span>
+</div>
+<div class="flex flex-col gap-space-lg">
+<!-- Login Único com Validação Visual em Tempo Real -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1" for="input-username">
+                Login Único Institucional <span class="text-error">*</span>
+</label>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Exemplo de teste:</span>
+<button class="font-label-sm text-label-sm text-tertiary underline decoration-dotted" id="btn-mock-duplicate" type="button">khorox.piloto (duplicado)</button>
+<span class="text-outline-variant">|</span>
+<button class="font-label-sm text-label-sm text-primary underline decoration-dotted" id="btn-mock-available" type="button">valerius.prime (livre)</button>
+</div>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">alternate_email</span>
+<input class="w-full h-10 pl-10 pr-10 rounded bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:bg-surface-container-high transition-colors outline-none focus:ring-1 focus:ring-primary" id="input-username" placeholder="ex: valerius.prime ou khorox.piloto" type="text" value="valerius.prime"/>
+<span class="material-symbols-outlined absolute right-3 text-primary text-[18px]" id="username-status-spinner">verified</span>
+</div>
+<!-- Dynamic Feedback message for duplicate login -->
+<div class="p-space-xs px-space-sm rounded bg-primary/10 flex items-center gap-space-xs text-primary transition-all" id="username-feedback-box">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-sm text-label-sm font-medium" id="username-feedback-text">Login "valerius.prime" disponível para registro no cluster.</span>
+</div>
+</div>
+<!-- Senha Provisória / Acesso & Generator -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-end">
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1" for="input-password">
+                  Senha Provisória / Acesso <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Min. 8 caracteres (A-Z, 0-9, #)</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">lock</span>
+<input class="w-full h-10 pl-10 pr-10 rounded bg-surface-container-lowest font-telemetry-num text-telemetry-num text-on-surface focus:bg-surface-container-high transition-colors outline-none focus:ring-1 focus:ring-secondary" id="input-password" placeholder="Digite ou gere uma chave criptográfica..." type="text" value="V@ler1us#Quant99"/>
+<button class="absolute right-3 text-on-surface-variant hover:text-on-surface" id="btn-toggle-pass-visibility" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-4">
+<button class="w-full h-10 px-space-md rounded bg-surface-container-high hover:bg-surface-variant text-secondary font-label-md text-label-md flex items-center justify-center gap-space-xs transition-colors shadow-sm" id="btn-gen-password" type="button">
+<span class="material-symbols-outlined text-[16px]">key</span>
+<span>Gerar Senha Quântica</span>
+</button>
+</div>
+</div>
+<!-- Password Strength Meter -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">security</span>
+                Entropia Criptográfica
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider" id="strength-label">
+                Ultra Segura (96 bits)
+              </span>
+</div>
+<!-- Segmented Meter Bar -->
+<div class="grid grid-cols-4 gap-1 h-1.5 w-full">
+<div class="rounded-full bg-primary h-full" id="bar-1"></div>
+<div class="rounded-full bg-primary h-full" id="bar-2"></div>
+<div class="rounded-full bg-primary h-full" id="bar-3"></div>
+<div class="rounded-full bg-primary h-full" id="bar-4"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant/70 font-label-sm text-label-sm pt-0.5">
+<span>Hash: SHA-512 Interlink</span>
+<span>Expira em 72h após 1º login</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Action Buttons Footer -->
+<div class="flex flex-col-reverse sm:flex-row items-center justify-between gap-space-md p-space-lg rounded-xl bg-surface-container shadow-lg">
+<a class="w-full sm:w-auto h-11 px-space-xl rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-space-xs transition-all" data-path="funcionarios" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Cancelar e Retornar</span>
+</a>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="hidden md:flex h-11 px-space-md rounded bg-surface-container-lowest hover:bg-surface-variant text-on-surface-variant font-label-md text-label-md uppercase tracking-wider items-center justify-center gap-space-xs transition-all" id="btn-draft" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Rascunho</span>
+</button>
+<button class="flex-1 sm:flex-initial h-11 px-space-xl rounded bg-primary text-on-primary font-headline-sm text-headline-sm uppercase tracking-wide flex items-center justify-center gap-space-sm hover:brightness-110 active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(78,222,163,0.3)]" id="btn-save-officer" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Salvar Funcionário</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Telemetry Inspector & Specimen Dossier (Col 4) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Officer Identity Card Preview -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg relative overflow-hidden flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">badge</span>
+            Credencial Holográfica
+          </span>
+<span class="font-telemetry-num text-telemetry-num text-primary" id="card-matricula-tag">ABD-0198</span>
+</div>
+<!-- Hologram Visual & Photo Frame -->
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Futuristic cybernetic alien operations officer portrait, high-tech tactical space uniform with glowing emerald insignia, sharp neon rim lighting against deep space dark blue background, volumetric cockpit lighting, cinematic sci-fi render 8k" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeoQdwkBijP7vfgxmvQBrvmWFN6etjkm8V8vpcB_xIT3E6TXqn0YIuwkYqFKcV5oQWabkwHKJROa3BWHcbXdhunFN9IlmDZbNDV24D9Eahfr683xsoISUGhA2Qc-0MwhTd6dnGWxzDGE6mQX1k7sH0FkkCLYNcqEsSklui3CGBB7vIrJ3__DGP6ezlafDK4qGgGeMj8JlqFqz08tTuZVBjUD8FEL8naWHtYF7uLQXU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Tactical HUD overlay lines -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface/80 font-label-sm text-label-sm text-secondary">
+            STATUS: NOMINAL
+          </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight" id="preview-name">Valerius Prime Zor-El</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider" id="preview-role">Gestor</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Metric Matrix Dossier -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Especialização</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate" id="preview-specialty">Operador Quântico</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nível Acesso</span>
+<span class="font-label-md text-label-md text-primary font-bold uppercase" id="preview-clearance">Nível 5 (Lorde)</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Terminal Alvo</span>
+<span class="font-telemetry-num text-telemetry-num text-on-surface">UPLINK-ORBIT-99</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estado</span>
+<span class="font-label-md text-label-md text-primary font-semibold uppercase" id="preview-active-status">Ativo em Frota</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-high/60 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>DNA Digital: 0x88F...42E</span>
+<span class="text-secondary font-mono">SECTOR-OMEGA</span>
+</div>
+</div>
+<!-- Real-Time Activity Telemetry Chart / Sparkline Component -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">monitoring</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Carga do Cluster Quântico</span>
+</div>
+<span class="font-telemetry-num text-telemetry-num text-primary">84.2 GHz</span>
+</div>
+<!-- Inline SVG Telemetry Graph -->
+<div class="w-full h-16 bg-surface-container-lowest rounded overflow-hidden flex items-end p-1 relative">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 200 48">
+<path d="M0,40 L20,35 L40,38 L60,20 L80,24 L100,8 L120,28 L140,15 L160,22 L180,6 L200,12" stroke="currentColor" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<path d="M0,40 L20,35 L40,38 L60,20 L80,24 L100,8 L120,28 L140,15 L160,22 L180,6 L200,12 L200,48 L0,48 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+<div class="absolute bottom-1 right-2 font-label-sm text-label-sm text-on-surface-variant">Latência: 1.4ms</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Sincronização com Nó Central</span>
+<span class="text-primary font-semibold">99.98% Estável</span>
+</div>
+</div>
+<!-- Audit Log Quick Feed -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">history</span>
+          Últimas Auditorias no Perfil
+        </span>
+<div class="flex flex-col gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<div class="p-space-xs rounded bg-surface-container-high flex justify-between items-center">
+<span>Login "valerius.prime" verificado</span>
+<span class="font-telemetry-num text-secondary">10:42:01</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-high flex justify-between items-center">
+<span>RN-003 validada p/ comando</span>
+<span class="font-telemetry-num text-secondary">09:15:32</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification (Hidden by default, triggered on Save) -->
+<div class="fixed bottom-6 right-6 z-50 p-space-md rounded-xl bg-surface-container-highest shadow-2xl flex items-center gap-space-md transform translate-y-32 opacity-0 transition-all duration-300" id="save-toast">
+<div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Tripulante Salvo com Sucesso!</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Registro sincronizado com o uplink estelar.</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface ml-space-sm" id="btn-close-toast" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  (function initOfficerForm() {
+    const inputFullname = document.getElementById('input-fullname');
+    const fullnameFeedback = document.getElementById('fullname-feedback');
+    const fullnameIcon = document.getElementById('fullname-icon');
+    const previewName = document.getElementById('preview-name');
+
+    const inputMatricula = document.getElementById('input-matricula');
+    const btnRegenReg = document.getElementById('btn-regenerate-reg');
+    const cardMatriculaTag = document.getElementById('card-matricula-tag');
+
+    const selectRole = document.getElementById('select-role');
+    const roleBadge = document.getElementById('role-badge');
+    const previewRole = document.getElementById('preview-role');
+    const previewClearance = document.getElementById('preview-clearance');
+
+    const inputCustomRole = document.getElementById('input-custom-role');
+    const previewSpecialty = document.getElementById('preview-specialty');
+
+    const radioActive = document.getElementById('radio-status-active');
+    const radioInactive = document.getElementById('radio-status-inactive');
+    const labelActive = document.getElementById('label-status-active');
+    const labelInactive = document.getElementById('label-status-inactive');
+    const statusHint = document.getElementById('status-hint');
+    const previewActiveStatus = document.getElementById('preview-active-status');
+
+    const inputUsername = document.getElementById('input-username');
+    const feedbackBox = document.getElementById('username-feedback-box');
+    const feedbackText = document.getElementById('username-feedback-text');
+    const statusSpinner = document.getElementById('username-status-spinner');
+    const btnMockDup = document.getElementById('btn-mock-duplicate');
+    const btnMockAvail = document.getElementById('btn-mock-available');
+
+    const inputPass = document.getElementById('input-password');
+    const btnGenPass = document.getElementById('btn-gen-password');
+    const btnTogglePass = document.getElementById('btn-toggle-pass-visibility');
+    const strengthLabel = document.getElementById('strength-label');
+    const bar1 = document.getElementById('bar-1');
+    const bar2 = document.getElementById('bar-2');
+    const bar3 = document.getElementById('bar-3');
+    const bar4 = document.getElementById('bar-4');
+
+    const btnSave = document.getElementById('btn-save-officer');
+    const saveToast = document.getElementById('save-toast');
+    const btnCloseToast = document.getElementById('btn-close-toast');
+
+    // 1. Fullname Live Validation & Preview
+    inputFullname.addEventListener('input', (e) => {
+      const val = e.target.value.trim();
+      previewName.textContent = val || 'Tripulante Não Identificado';
+      const parts = val.split(' ').filter(Boolean);
+      if (parts.length >= 2) {
+        fullnameFeedback.textContent = 'Identificador válido';
+        fullnameFeedback.className = 'font-label-sm text-label-sm text-primary';
+        fullnameIcon.textContent = 'check_circle';
+        fullnameIcon.className = 'material-symbols-outlined absolute right-3 text-primary text-[18px]';
+      } else {
+        fullnameFeedback.textContent = 'Requer nome e linhagem/sobrenome';
+        fullnameFeedback.className = 'font-label-sm text-label-sm text-tertiary';
+        fullnameIcon.textContent = 'error';
+        fullnameIcon.className = 'material-symbols-outlined absolute right-3 text-tertiary text-[18px]';
+      }
+    });
+
+    // 2. Matricula Generator
+    function generateMatricula() {
+      const randNum = Math.floor(1000 + Math.random() * 9000);
+      const reg = `ABD-${randNum}`;
+      inputMatricula.value = reg;
+      cardMatriculaTag.textContent = reg;
+    }
+    btnRegenReg.addEventListener('click', generateMatricula);
+    inputMatricula.addEventListener('input', (e) => {
+      cardMatriculaTag.textContent = e.target.value.toUpperCase();
+    });
+
+    // 3. Role Selector Hierarchy Handling
+    const roleClearances = {
+      'Gestor': { tag: 'Nível Alfa', clearance: 'Nível 5 (Lorde)' },
+      'Supervisor': { tag: 'Nível Beta', clearance: 'Nível 4 (Alto Mando)' },
+      'Piloto': { tag: 'Regra RN-003', clearance: 'Nível 3 (Navegação)' },
+      'Abduzidor': { tag: 'Regra RN-003', clearance: 'Nível 3 (Campo)' },
+      'Pesquisador': { tag: 'Nível Gamma', clearance: 'Nível 2 (Laboratório)' },
+      'Cientista': { tag: 'Nível Gamma', clearance: 'Nível 2 (Análise)' }
+    };
+
+    selectRole.addEventListener('change', (e) => {
+      const r = e.target.value;
+      previewRole.textContent = r;
+      const meta = roleClearances[r] || { tag: 'Padrão', clearance: 'Nível 1' };
+      roleBadge.textContent = meta.tag;
+      previewClearance.textContent = meta.clearance;
+
+      if (r === 'Piloto' || r === 'Abduzidor') {
+        roleBadge.className = 'font-label-sm text-label-sm px-space-xs rounded bg-tertiary/20 text-tertiary uppercase font-bold';
+      } else {
+        roleBadge.className = 'font-label-sm text-label-sm px-space-xs rounded bg-surface-container-high text-primary uppercase';
+      }
+    });
+
+    // 4. Custom Specialty
+    inputCustomRole.addEventListener('input', (e) => {
+      previewSpecialty.textContent = e.target.value || 'Geral';
+    });
+
+    // 5. Operational Status Toggle
+    function updateStatusUI(isActive) {
+      if (isActive) {
+        labelActive.className = 'flex-1 h-full flex items-center justify-center gap-space-xs rounded cursor-pointer transition-all bg-primary-container text-on-primary-container font-semibold';
+        labelInactive.className = 'flex-1 h-full flex items-center justify-center gap-space-xs rounded cursor-pointer transition-all text-on-surface-variant hover:text-on-surface';
+        statusHint.textContent = 'Tripulante apto a assumir naves e escalas';
+        previewActiveStatus.textContent = 'Ativo em Frota';
+        previewActiveStatus.className = 'font-label-md text-label-md text-primary font-semibold uppercase';
+      } else {
+        labelInactive.className = 'flex-1 h-full flex items-center justify-center gap-space-xs rounded cursor-pointer transition-all bg-error-container text-on-error font-semibold';
+        labelActive.className = 'flex-1 h-full flex items-center justify-center gap-space-xs rounded cursor-pointer transition-all text-on-surface-variant hover:text-on-surface';
+        statusHint.textContent = 'Acesso a naves temporariamente revogado';
+        previewActiveStatus.textContent = 'Suspenso / Standby';
+        previewActiveStatus.className = 'font-label-md text-label-md text-error font-semibold uppercase';
+      }
+    }
+
+    radioActive.addEventListener('change', () => updateStatusUI(true));
+    radioInactive.addEventListener('change', () => updateStatusUI(false));
+
+    // 6. Username Duplicate Check Simulation (US-001 & US-003)
+    function validateUsername(val) {
+      const normalized = val.trim().toLowerCase();
+      if (!normalized) {
+        feedbackBox.className = 'p-space-xs px-space-sm rounded bg-surface-container-high flex items-center gap-space-xs text-on-surface-variant';
+        feedbackBox.innerHTML = '<span class="material-symbols-outlined text-[16px]">info</span><span class="font-label-sm text-label-sm">Informe um identificador único de acesso.</span>';
+        statusSpinner.textContent = 'radio_button_unchecked';
+        statusSpinner.className = 'material-symbols-outlined absolute right-3 text-on-surface-variant text-[18px]';
+        return;
+      }
+
+      if (normalized === 'khorox.piloto') {
+        // Mock DUPLICATE error state
+        feedbackBox.className = 'p-space-xs px-space-sm rounded bg-error-container text-on-error flex items-center gap-space-xs';
+        feedbackBox.innerHTML = '<span class="material-symbols-outlined text-[16px]">error</span><span class="font-label-sm text-label-sm font-medium">Login "khorox.piloto" já está em uso por outro tripulante da frota.</span>';
+        statusSpinner.textContent = 'cancel';
+        statusSpinner.className = 'material-symbols-outlined absolute right-3 text-error text-[18px]';
+      } else {
+        // Available success state
+        feedbackBox.className = 'p-space-xs px-space-sm rounded bg-primary/10 flex items-center gap-space-xs text-primary';
+        feedbackBox.innerHTML = `<span class="material-symbols-outlined text-[16px]">check_circle</span><span class="font-label-sm text-label-sm font-medium">Login "${normalized}" disponível para registro no cluster.</span>`;
+        statusSpinner.textContent = 'verified';
+        statusSpinner.className = 'material-symbols-outlined absolute right-3 text-primary text-[18px]';
+      }
+    }
+
+    inputUsername.addEventListener('input', (e) => validateUsername(e.target.value));
+    btnMockDup.addEventListener('click', () => {
+      inputUsername.value = 'khorox.piloto';
+      validateUsername('khorox.piloto');
+    });
+    btnMockAvail.addEventListener('click', () => {
+      inputUsername.value = 'valerius.prime';
+      validateUsername('valerius.prime');
+    });
+
+    // 7. Password Generator & Strength Assessment
+    function calculateStrength(pwd) {
+      let score = 0;
+      if (pwd.length >= 8) score++;
+      if (/[A-Z]/.test(pwd)) score++;
+      if (/[0-9]/.test(pwd)) score++;
+      if (/[^A-Za-z0-9]/.test(pwd)) score++;
+
+      bar1.className = 'rounded-full h-full ' + (score >= 1 ? 'bg-primary' : 'bg-surface-container-high');
+      bar2.className = 'rounded-full h-full ' + (score >= 2 ? 'bg-primary' : 'bg-surface-container-high');
+      bar3.className = 'rounded-full h-full ' + (score >= 3 ? 'bg-primary' : 'bg-surface-container-high');
+      bar4.className = 'rounded-full h-full ' + (score >= 4 ? 'bg-primary' : 'bg-surface-container-high');
+
+      if (score === 4) {
+        strengthLabel.textContent = 'Ultra Segura (96 bits)';
+        strengthLabel.className = 'font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider';
+      } else if (score === 3) {
+        strengthLabel.textContent = 'Forte (64 bits)';
+        strengthLabel.className = 'font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider';
+      } else if (score === 2) {
+        strengthLabel.textContent = 'Média (32 bits)';
+        strengthLabel.className = 'font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider';
+      } else {
+        strengthLabel.textContent = 'Fraca / Vulnerável';
+        strengthLabel.className = 'font-label-sm text-label-sm text-error font-bold uppercase tracking-wider';
+      }
+    }
+
+    inputPass.addEventListener('input', (e) => calculateStrength(e.target.value));
+
+    btnGenPass.addEventListener('click', () => {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+      let pass = '';
+      for (let i = 0; i < 14; i++) {
+        pass += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      inputPass.value = pass;
+      calculateStrength(pass);
+    });
+
+    btnTogglePass.addEventListener('click', () => {
+      if (inputPass.type === 'password') {
+        inputPass.type = 'text';
+        btnTogglePass.innerHTML = '<span class="material-symbols-outlined text-[18px]">visibility</span>';
+      } else {
+        inputPass.type = 'password';
+        btnTogglePass.innerHTML = '<span class="material-symbols-outlined text-[18px]">visibility_off</span>';
+      }
+    });
+
+    // 8. Save Trigger
+    btnSave.addEventListener('click', () => {
+      saveToast.classList.remove('translate-y-32', 'opacity-0');
+      saveToast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        saveToast.classList.remove('translate-y-0', 'opacity-100');
+        saveToast.classList.add('translate-y-32', 'opacity-0');
+      }, 4000);
+    });
+
+    btnCloseToast.addEventListener('click', () => {
+      saveToast.classList.remove('translate-y-0', 'opacity-100');
+      saveToast.classList.add('translate-y-32', 'opacity-0');
+    });
+  })();
+</script></main></div></body></html>

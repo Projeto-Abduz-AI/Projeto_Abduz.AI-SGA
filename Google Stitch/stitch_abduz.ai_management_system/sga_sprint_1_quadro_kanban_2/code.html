@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#005236","error-container":"#93000a","on-tertiary":"#472a00","on-tertiary-container":"#523200","tertiary":"#ffb95f","on-surface-variant":"#bbcabf","on-primary":"#003824","surface-bright":"#353943","surface-variant":"#31353f","primary-fixed-dim":"#4edea3","error":"#ffb4ab","tertiary-fixed-dim":"#ffb95f","primary":"#4edea3","secondary-fixed":"#acedff","surface-container-low":"#181b25","background":"#0f131c","outline":"#86948a","surface-container-high":"#262a34","on-background":"#dfe2ef","secondary-container":"#03b5d3","tertiary-container":"#e29100","on-primary-fixed":"#002113","on-surface":"#dfe2ef","primary-fixed":"#6ffbbe","inverse-surface":"#dfe2ef","on-secondary-container":"#00424e","surface-container-highest":"#31353f","on-secondary-fixed":"#001f26","inverse-primary":"#006c49","on-error":"#690005","surface":"#0f131c","surface-container-lowest":"#0a0e17","primary-container":"#10b981","on-primary-container":"#00422b","outline-variant":"#3c4a42","on-tertiary-fixed-variant":"#653e00","tertiary-fixed":"#ffddb8","inverse-on-surface":"#2c303a","on-error-container":"#ffdad6","on-secondary":"#003640","surface-dim":"#0f131c","secondary-fixed-dim":"#4cd7f6","surface-tint":"#4edea3","secondary":"#4cd7f6","surface-container":"#1c1f29","on-secondary-fixed-variant":"#004e5c","on-tertiary-fixed":"#2a1700"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"0.75rem","space-xs":"0.25rem","space-md":"0.75rem","space-sm":"0.5rem","margin":"1.5rem","gutter":"1rem","gutter-mobile":"0.5rem","space-xl":"1.5rem","space-lg":"1rem"},"fontFamily":{"label-md":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"headline-xl-mobile":["Space Grotesk"],"label-sm":["JetBrains Mono"],"headline-lg-mobile":["Space Grotesk"],"headline-lg":["Space Grotesk"],"body-lg":["Geist"],"headline-md":["Space Grotesk"],"body-sm":["Geist"],"body-md":["Geist"],"telemetry-num":["JetBrains Mono"],"headline-xl":["Space Grotesk"],"headline-sm":["Space Grotesk"]},"fontSize":{"label-md":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.06em","fontWeight":"500"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"telemetry-num":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.6)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><img alt="Abduz.AI SGA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X62x70KQGydehgvo90iMudElaIm594MLT2GfRE2_sRaQ4c_IXnRBffO9w18RQkUkxr7FWRgHJZibRCEbyYfub1r6jmgFd41Zz81f8tivxMwj9RMN0LFnYYyt-I7_u7Wimnp3l7Uc2irkIdbSE1FuE8W4G-KeuH7juFQND7mv4m4ygQjB8V-1T0bYtK6bxXaczKn80cIIgcfoQkUpTk-i4aO0d2wSqEOgEvxSYgVvcMlA"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary uppercase tracking-tight">Portal SGA</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-secondary-fixed border border-outline-variant/40">v1.0.4-SPEC</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">SISTEMA DE GESTÃO DE ABDUÇÕES • ABDUZ.AI</span></div></div><div class="hidden xl:flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high/60"><span class="material-symbols-outlined text-[14px] text-primary">public</span><span class="font-label-sm text-label-sm text-on-surface">ACESSO PÚBLICO (AVALIAÇÃO DOCENTE)</span></div><div class="flex items-center gap-space-xs"><div class="flex items-center gap-1 px-space-xs py-1 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[13px]">commit</span><span>main (entrega)</span></div><div class="flex items-center gap-1 px-space-xs py-1 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[13px]">fork_right</span><span>develop (integração)</span></div></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high/40"><span class="material-symbols-outlined text-[14px] text-tertiary">schedule</span><span class="font-label-sm text-label-sm text-on-surface-variant">DEADLINE:</span><span class="font-telemetry-num text-telemetry-num text-tertiary">29/10/2026 23:59</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high/40"><span class="material-symbols-outlined text-[14px] text-primary">bolt</span><span class="font-label-sm text-label-sm text-on-surface-variant">SPRINT 1:</span><span class="font-telemetry-num text-telemetry-num text-on-surface">22/10 → 04/11/2026</span></div></div><nav class="hidden lg:flex items-center gap-space-xs px-space-xs py-1 bg-surface-container-low rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(16,185,129,0.25)]"><a class="font-label-md text-label-md px-space-md py-1.5 rounded transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-path="sprint-1-e-quadro-kanban" href="#">Sprint 1 &amp; Quadro Kanban</a><a class="font-label-md text-label-md px-space-md py-1.5 rounded transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-path="backlog-geral-35-us" href="#">Backlog Geral (35 US)</a><a class="font-label-md text-label-md px-space-md py-1.5 rounded transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-path="criterios-de-aceitacao-e-dod" href="#">Critérios de Aceitação &amp; DoD</a><a class="font-label-md text-label-md px-space-md py-1.5 rounded transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-path="documentacao-e-discovery" href="#">Documentação &amp; Discovery</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">LIVE SYNC</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">ESCOPO &amp; TELEMETRIA OPERACIONAL</span><span class="font-body-sm text-body-sm text-on-surface-variant">Métricas consolidadas do sistema Abduz.AI</span></div><div class="grid grid-cols-2 gap-space-sm"><div class="p-space-md rounded bg-surface-container-low flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">OBJETIVOS</span><span class="font-telemetry-num text-telemetry-num text-primary">7</span><span class="font-label-sm text-label-sm text-on-surface-variant/80">Estratégicos</span></div><div class="p-space-md rounded bg-surface-container-low flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">HISTÓRIAS</span><span class="font-telemetry-num text-telemetry-num text-secondary">35 US</span><span class="font-label-sm text-label-sm text-on-surface-variant/80">100% Mapeadas</span></div><div class="p-space-md rounded bg-surface-container-low flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">RFs</span><span class="font-telemetry-num text-telemetry-num text-on-surface">88</span><span class="font-label-sm text-label-sm text-on-surface-variant/80">Funcionais</span></div><div class="p-space-md rounded bg-surface-container-low flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">RNFs</span><span class="font-telemetry-num text-telemetry-num text-on-surface">5</span><span class="font-label-sm text-label-sm text-on-surface-variant/80">Não Funcionais</span></div><div class="p-space-md rounded bg-surface-container-low flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">RNs</span><span class="font-telemetry-num text-telemetry-num text-on-surface">23</span><span class="font-label-sm text-label-sm text-on-surface-variant/80">Regras Negócio</span></div><div class="p-space-md rounded bg-surface-container-low flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">DECISÕES</span><span class="font-telemetry-num text-telemetry-num text-tertiary">7 ADR</span><span class="font-label-sm text-label-sm text-on-surface-variant/80">Aprovadas</span></div></div><div class="flex flex-col gap-space-sm pt-space-xs"><span class="font-label-sm text-label-sm text-error tracking-wider uppercase flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">warning</span>ALERTAS DE ENGENHARIA</span><div class="p-space-sm rounded bg-error-container/20 flex flex-col gap-0.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-error">OPEN-019</span><span class="font-label-sm text-label-sm px-1 rounded bg-error/20 text-error">PENDENTE</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Definição de criptografia de telemetria biológica quântica.</span></div><div class="p-space-sm rounded bg-error-container/20 flex flex-col gap-0.5"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-error">OPEN-023</span><span class="font-label-sm text-label-sm px-1 rounded bg-error/20 text-error">EM ANÁLISE</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Protocolo de fallback de raio trator em caso de interrupção orbital.</span></div></div></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">GATEWAY STATUS</span><span class="font-label-sm text-label-sm text-primary">ONLINE 99.98%</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">CLUSTER</span><span class="font-telemetry-num text-label-sm text-secondary">ORBITAL-SP-01</span></div></div></aside><div class="pl-72"><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- TOPO: AVALIAÇÃO DOCENTE & CONFORMIDADE REGULATÓRIA -->
+<section class="p-space-xl bg-surface-container-lowest">
+<div class="flex flex-col xl:flex-row xl:items-start justify-between gap-space-xl">
+<div class="flex flex-col gap-space-sm max-w-3xl">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">PAINEL DE AUDITORIA DOCENTE</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-telemetry-num">SPRINT-1-EVAL</span>
+<span class="px-space-sm py-0.5 rounded bg-secondary-container/20 text-secondary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> CONFORME SPEC DISCIPLINAR
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Gestão Ágil: Sprint 1 &amp; Validação de Entrega</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Auditoria das diretrizes da disciplina: estrutura de repositório Git, esteira de branches, quadro Kanban do projeto Abduz.AI, e detalhamento cirúrgico do incremento da Sprint 1 (Base de Funcionários e Gestão de Acesso).
+        </p>
+<!-- LINKS DIRETOS PARA O PROFESSOR -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="px-space-lg py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-sm shadow-[0_0_16px_rgba(16,185,129,0.3)] hover:bg-primary-fixed transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>Repositório GitHub (Público - branches main &amp; develop)</span>
+<span class="material-symbols-outlined text-[15px]">open_in_new</span>
+</a>
+<a class="px-space-lg py-2.5 rounded bg-surface-container-high text-secondary font-label-md text-label-md flex items-center gap-space-sm hover:bg-surface-bright transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">view_kanban</span>
+<span>Project — Quadro do Backlog (Abduz.AI Board)</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+<button class="px-space-md py-2.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-space-xs hover:text-on-surface hover:bg-surface-container-high transition-colors" id="btnCopiarLinks" onclick="navigator.clipboard?.writeText('https://github.com/abduz-ai/sga-core'); const b=this.querySelector('span:last-child'); b.innerText='Copiado!'; setTimeout(()=&gt;b.innerText='Copiar Links', 2000);">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copiar Links</span>
+</button>
+</div>
+</div>
+<!-- PAINEL DE DATAS & STATUS -->
+<div class="flex flex-col gap-space-sm min-w-[320px] bg-surface-container-low p-space-lg rounded-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">MARCOS CRÍTICOS</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container/20 text-primary">SINCRONIZADO</span>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_busy</span> PRAZO ENTREGA LINKS
+            </span>
+<span class="font-label-sm text-label-sm text-error bg-error-container/30 px-1.5 py-0.5 rounded">FATAL DEADLINE</span>
+</div>
+<span class="font-telemetry-num text-telemetry-num text-tertiary">29/10/2026 às 23h59</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Postagem no portal acadêmico dos repositórios e branches.</span>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">date_range</span> PERÍODO DA SPRINT 1
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 DIAS CORRIDOS</span>
+</div>
+<span class="font-telemetry-num text-telemetry-num text-on-surface">22/10/2026 → 04/11/2026</span>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden mt-1">
+<div class="h-full bg-primary rounded-full" style="width: 50%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dia 7 de 14 • 50% do ciclo temporal decorrido</span>
+</div>
+</div>
+</div>
+<!-- MATRIZ DE CONFORMIDADE COM O PEDIDO DO PROFESSOR -->
+<div class="mt-space-lg pt-space-lg bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Checklist de Conformidade com o Pedido do Professor</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-container/20 px-space-sm py-1 rounded">5/5 REQUISITOS ATENDIDOS (100%)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">01. ORGANIZAÇÃO</span>
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+</div>
+<span class="font-headline-sm text-label-lg text-on-surface">Quadro Kanban</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Colunas: Backlog, Todo, In Progress, Team Help, Review, Done estruturadas.</p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">02. BRANCHING</span>
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+</div>
+<span class="font-headline-sm text-label-lg text-on-surface">Main + Develop</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Branch main de entrega intacta e develop ativa para PRs e integração diária.</p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">03. BACKLOG GERAL</span>
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+</div>
+<span class="font-headline-sm text-label-lg text-on-surface">35 US (#1 a #35)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Todas as 35 histórias mapeadas com identificadores unificados e rastreáveis.</p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">04. SPRINT 1</span>
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+</div>
+<span class="font-headline-sm text-label-lg text-on-surface">13 Pts (US 01-03)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">US-001 (5pts), US-002 (5pts), US-003 (3pts) e 7 tarefas técnicas detalhadas.</p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">05. DOCUMENTAÇÃO</span>
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+</div>
+<span class="font-headline-sm text-label-lg text-on-surface">README Unificado</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instruções, ADRs, papéis alienígenas e critérios de DoD centralizados na raiz.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PAINEL RESUMO DA SPRINT 1: FUNCIONÁRIOS E ACESSO -->
+<section class="p-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">OBJETIVO CENTRAL DA SPRINT 1</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Fundação de Funcionários &amp; Controle de Acesso Quântico</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          Disponibilizar a base de funcionários e controle de acesso ao SGA (cadastro administrativo, autenticação com proteção anti-força bruta e controle de situação ativa/inativa sem exclusão física do registro da nave-mãe).
+        </p>
+</div>
+<!-- CHIPS DE TELEMETRIA DA SPRINT -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="px-space-md py-space-sm rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CAPACIDADE</span>
+<span class="font-telemetry-num text-telemetry-num text-primary">13 PONTOS</span>
+</div>
+<div class="px-space-md py-space-sm rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HISTÓRIAS</span>
+<span class="font-telemetry-num text-telemetry-num text-secondary">3 US ATIVAS</span>
+</div>
+<div class="px-space-md py-space-sm rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TAREFAS</span>
+<span class="font-telemetry-num text-telemetry-num text-on-surface">7 WORK ITEMS</span>
+</div>
+<div class="px-space-md py-space-sm rounded bg-error-container/20 flex flex-col">
+<span class="font-label-sm text-label-sm text-error">IMPEDIMENTOS</span>
+<span class="font-telemetry-num text-telemetry-num text-error">2 CRÍTICOS</span>
+</div>
+</div>
+</div>
+<!-- ROLES DO DOMÍNIO OPERACIONAL -->
+<div class="p-space-lg bg-surface-container rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">badge</span> ROLES DO DOMÍNIO (SISTEMA DE HIERARQUIA &amp; PERMISSÕES)
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">RF-003 / RN-004 ABRANGIDAS</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-space-sm">
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">admin_panel_settings</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Gestor</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Controle total, cadastra e inativa quadros</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">manage_accounts</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Supervisor</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monitora escalas de raio e telemetria</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">flight_takeoff</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Piloto</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Opera naves de captura e navegação</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">radar</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Abduzidor</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Execução de campo e feixe trator</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">biotech</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Pesquisador</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Triagem genética e catalogação</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">science</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Cientista</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Análises celulares e bio-implantes</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">person_search</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">Humanos</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Especimes participantes (sem login)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- QUADRO KANBAN DA SPRINT 1 -->
+<section class="p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">view_kanban</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Quadro Kanban Interativo (Sprint 1)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mapeamento em tempo real do fluxo de desenvolvimento e bloqueios de histórias</span>
+</div>
+</div>
+<!-- FILTRO DE AUDITORIA RÁPIDA -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm">Todas as Histórias</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:bg-surface-container-high">Apenas com Impedimento</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:bg-surface-container-high">Prioridade Alta</button>
+</div>
+</div>
+<!-- ESTRUTURA DAS 6 COLUNAS DO QUADRO -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md overflow-x-auto pb-space-sm">
+<!-- COLUNA 1: BACKLOG GERAL (32 US RESTANTES) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[220px]">
+<div class="flex items-center justify-between p-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-surface-variant"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">BACKLOG</span>
+</div>
+<span class="font-telemetry-num text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">32 US</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-sm rounded bg-surface-container/60 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-telemetry-num">US-004...035</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">142 pts</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Aguardando Sprints 2 a 6 (Missões, telemetria de feixe e espécimes).</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 pt-1">
+<span class="material-symbols-outlined text-[13px]">list_alt</span> 32 histórias prioritárias
+            </span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest/50 text-center py-6 text-on-surface-variant font-label-sm text-label-sm">
+            Fila priorizada no Backlog Geral
+          </div>
+</div>
+</div>
+<!-- COLUNA 2: TODO (A FAZER) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[220px]">
+<div class="flex items-center justify-between p-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">TODO</span>
+</div>
+<span class="font-telemetry-num text-label-sm px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary">1 US • 3 pts</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- CARD US-003 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-sm hover:bg-surface-bright transition-all cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-telemetry-num font-bold">US-003</span>
+<span class="font-label-sm text-label-sm px-1 rounded bg-error-container/20 text-error">ALTA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Acessar o SGA (Autenticação)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Autenticar com matrícula e senha criptografada. Bloqueio por 5 tentativas seguidas durante 15 minutos.
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-telemetry-num text-label-sm text-primary">3 PONTOS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary">lock</span> S1-T03
+              </span>
+</div>
+<div class="pt-1 flex items-center gap-1">
+<span class="font-label-sm text-label-sm px-1 py-0.5 rounded bg-surface-container-high text-on-surface-variant">RNF-001 (Argon2id)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUNA 3: IN PROGRESS (EM PROGRESSO) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[220px]">
+<div class="flex items-center justify-between p-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary font-semibold">IN PROGRESS</span>
+</div>
+<span class="font-telemetry-num text-label-sm px-1.5 py-0.5 rounded bg-primary-container/20 text-primary">2 US • 10 pts</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- CARD US-001 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num font-bold">US-001</span>
+<span class="font-label-sm text-label-sm px-1 rounded bg-error-container/20 text-error">ALTA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cadastrar &amp; Atualizar Funcionários</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Registro administrativo com matrícula única, cargo alienígena e validações contra duplicidade.
+            </p>
+<!-- ALERTA DE RISCO EMBUTIDO -->
+<div class="p-space-xs rounded bg-error-container/20 flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span class="font-label-sm text-label-sm font-semibold">OPEN-023: Validações de cargo</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-telemetry-num text-label-sm text-primary">5 PONTOS</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">code</span> S1-T02
+              </span>
+</div>
+</div>
+<!-- CARD US-002 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num font-bold">US-002</span>
+<span class="font-label-sm text-label-sm px-1 rounded bg-error-container/20 text-error">ALTA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Inativar &amp; Reativar Funcionários</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Alternar situação sem exclusão física da base. Bloqueio imediato de login e operações em naves.
+            </p>
+<!-- ALERTA CRÍTICO OPEN-019 -->
+<div class="p-space-xs rounded bg-error-container/20 flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[14px]">block</span>
+<span class="font-label-sm text-label-sm font-semibold">OPEN-019: Missões pendentes</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-telemetry-num text-label-sm text-primary">5 PONTOS</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">code</span> S1-T04
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUNA 4: TEAM HELP (AJUDA DA EQUIPE) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[220px]">
+<div class="flex items-center justify-between p-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">TEAM HELP</span>
+</div>
+<span class="font-telemetry-num text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">0 ITENS</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest/40 flex flex-col items-center justify-center min-h-[160px] text-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant/40">groups</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nenhum chamado aberto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/60">Equipe alinhada nas tarefas S1-T02 e T03</span>
+</div>
+</div>
+<!-- COLUNA 5: REVIEW (REVISÃO / CODE REVIEW) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[220px]">
+<div class="flex items-center justify-between p-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md text-secondary font-semibold">REVIEW</span>
+</div>
+<span class="font-telemetry-num text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">0 ITENS</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest/40 flex flex-col items-center justify-center min-h-[160px] text-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant/40">rate_review</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S1-T06 agendado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/60">Aguardando PRs contra branch develop</span>
+</div>
+</div>
+<!-- COLUNA 6: DONE (CONCLUÍDO) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl min-w-[220px]">
+<div class="flex items-center justify-between p-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">DONE</span>
+</div>
+<span class="font-telemetry-num text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">0 ITENS</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest/40 flex flex-col items-center justify-center min-h-[160px] text-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant/40">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aguardando DoD Rigorosa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/60">Nenhuma história fecha com OPEN-019/023 pendentes</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CRONOGRAMA DE TAREFAS & SEQUÊNCIA TEMPORAL (GANTT TELEMETRIA) -->
+<section class="p-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">timeline</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Cronograma Operacional de Tarefas (S1-T01 a S1-T07)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sequência de 14 dias com marcos de entrega técnica e refinamento</span>
+</div>
+</div>
+<span class="font-telemetry-num text-label-sm text-primary bg-primary-container/20 px-space-md py-1 rounded">EXECUÇÃO LINEAR CONTROLADA</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- BLOCO FASE 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary">22 → 23/10 (2 DIAS)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-bold">CONCLUÍDO</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">S1-T01: Refinamento Técnico</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mapeamento dos impactos de OPEN-023 e OPEN-019 com a liderança alienígena de missões.
+          </p>
+</div>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Dependência: N/A</span>
+<span class="text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">done</span> Aprovado</span>
+</div>
+</div>
+<!-- BLOCO FASE 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-primary">24 → 29/10 (6 DIAS)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container/30 text-primary font-bold animate-pulse">EM ANDAMENTO</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-primary font-semibold">S1-T02: Cadastro de Funcionários</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Matrícula automática, unicidade, cargos e persistência segura.</span>
+</div>
+<div class="flex flex-col gap-0.5 pt-1">
+<span class="font-label-md text-label-md text-secondary font-semibold">S1-T03: Autenticação Segura</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Credenciais válidas/inválidas e contador de lockout (15 min).</span>
+</div>
+</div>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Sprint 1 Core</span>
+<span class="text-secondary font-telemetry-num">Em curso</span>
+</div>
+</div>
+<!-- BLOCO FASE 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary-fixed">30/10 → 02/11 (4 DIAS)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">AGENDADO</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">S1-T04: Gestão de Situação</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inativação/reativação lógica sem descarte físico de registros.</span>
+</div>
+<div class="flex flex-col gap-0.5 pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">S1-T05: Integração &amp; Testes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cenários positivos, limites de tentativas e auditoria cruzada.</span>
+</div>
+</div>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Dependência: S1-T02/T03</span>
+<span class="text-on-surface-variant font-telemetry-num">Fila</span>
+</div>
+</div>
+<!-- BLOCO FASE 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">03 → 04/11 (2 DIAS)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">HOMOLOGAÇÃO</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">S1-T06: Code Review &amp; QA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Code review rigoroso e merge PR contra develop.</span>
+</div>
+<div class="flex flex-col gap-0.5 pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">S1-T07: Encerramento &amp; Demo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Demonstração do incremento estável aos avaliadores.</span>
+</div>
+</div>
+<div class="mt-auto pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Marco Final</span>
+<span class="text-tertiary font-telemetry-num">Sprint Review</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MATRIZ DE RISCOS & BLOQUEIOS EXPLÍCITOS -->
+<section class="p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[24px]">crisis_alert</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Matriz de Riscos, Bloqueios Críticos &amp; Fronteiras de Escopo</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alertas de engenharia com tratamento explícito para blindagem da qualidade da entrega</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- BLOQUEIOS TÉCNICOS ESPECÍFICOS -->
+<div class="p-space-lg rounded-xl bg-error-container/15 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-error flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">dangerous</span> IMPEDIMENTOS EM TRATAMENTO
+          </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error/20 text-error font-telemetry-num">AÇÃO IMEDIATA</span>
+</div>
+<!-- OPEN-019 -->
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-label-lg text-error">OPEN-019: Inativação com Missões Agendadas</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container/30 text-error font-bold">BLOQUEANTE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Não é permitido assumir cancelamento silencioso de abduções em andamento nem fechar a US-002 sem resolução pactuada. Caso um Piloto ou Abduzidor seja inativado, a nave precisa de protocolo formal de substituição ou abortagem segura.
+          </p>
+<div class="p-space-xs rounded bg-surface-container-high flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Status: Em análise pelo Product Owner</span>
+<span class="text-tertiary">Impacta: US-002 (5 pts)</span>
+</div>
+</div>
+<!-- OPEN-023 -->
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-label-lg text-tertiary">OPEN-023: Validações de Cadastro e Regras de Cargo</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-bold">PENDENTE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Necessidade de validação estrita da duplicidade de matriz biológica / matrícula interplanetária antes da gravação no cluster central. Cargo deve pertencer estritamente à taxonomia autorizada (RF-003).
+          </p>
+<div class="p-space-xs rounded bg-surface-container-high flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Status: Refinamento com a Engenharia</span>
+<span class="text-tertiary">Impacta: US-001 (5 pts)</span>
+</div>
+</div>
+</div>
+<!-- FRONTEIRAS DE ESCOPO E REGRAS DE NEGÓCIO -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">shield</span> FRONTEIRAS DO SISTEMA &amp; ESCOPO
+          </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-telemetry-num">DELIMITAÇÃO</span>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Regra de Elegibilidade de Missão</span>
+<span class="font-label-sm text-label-sm text-secondary">FUTURO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Apenas funcionários com situação <strong class="text-primary font-normal">ATIVA</strong> poderão ser escalados em tripulações de naves na Sprint 2. A Sprint 1 fornece o selo de elegibilidade fundamental.
+            </p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Políticas Fora de Escopo da Sprint 1</span>
+<span class="font-label-sm text-label-sm text-error">FORA DE ESCOPO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Infiltração em bases terrestres restritas (ex: Área 51), relatórios executivos avançados e telemetria de feixe trator foram formalmente postergados para preservar foco absoluto na fundação cadastral.
+            </p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Mecanismo Anti-Brute-Force (RNF-001)</span>
+<span class="font-label-sm text-label-sm text-primary">ATIVO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Limite inegociável de 5 tentativas inválidas de autenticação consecutivas, engatando lockout quântico temporizado em exatos 15 minutos na nave de acesso.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- DEFINIÇÃO DE PRONTO (DoD) - AUDITORIA RIGOROSA -->
+<section class="p-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Definição de Pronto (DoD - Definition of Done)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Critérios inegociáveis para autorização de movimentação de histórias para a coluna Done</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-space-md py-1 rounded bg-surface-container text-on-surface font-telemetry-num">6 CRITÉRIOS OBRIGATÓRIOS</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- DOD ITEM 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num">DOD-01</span>
+<span class="material-symbols-outlined text-primary text-[18px]">biotech</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Evidências de Teste</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Execução e registro formal de testes automatizados e manuais cobrindo cenários positivos, negativos e limites de segurança (ex: 5 falhas no login).
+        </p>
+<div class="mt-auto pt-space-xs flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span> Cobertura ≥ 85%
+        </div>
+</div>
+<!-- DOD ITEM 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num">DOD-02</span>
+<span class="material-symbols-outlined text-primary text-[18px]">rule</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Zero Pendência Bloqueante</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Nenhuma história pode ser fechada com OPENs críticos abertos (US-001 e US-002 dependem da aprovação documental de OPEN-023 e OPEN-019).
+        </p>
+<div class="mt-auto pt-space-xs flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> Bloqueio estrito
+        </div>
+</div>
+<!-- DOD ITEM 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num">DOD-03</span>
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Revisão por Pares (Peer Review)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Pelo menos um membro sênior da tripulação técnica deve aprovar o Pull Request garantindo conformidade com padrões de codificação limpa e segurança.
+        </p>
+<div class="mt-auto pt-space-xs flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span> 1+ Aprovação
+        </div>
+</div>
+<!-- DOD ITEM 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num">DOD-04</span>
+<span class="material-symbols-outlined text-primary text-[18px]">call_merge</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Integração na Branch Develop</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Merge concluído sem conflitos na branch develop, com pipeline de CI/CD validado e build interplanetário aprovado com sucesso.
+        </p>
+<div class="mt-auto pt-space-xs flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span> CI Green
+        </div>
+</div>
+<!-- DOD ITEM 5 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num">DOD-05</span>
+<span class="material-symbols-outlined text-primary text-[18px]">menu_book</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Documentação no README</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Atualização de parâmetros de execução local, novas variáveis de ambiente, notas de release e instruções unificadas no README da raiz.
+        </p>
+<div class="mt-auto pt-space-xs flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span> Centralizado
+        </div>
+</div>
+<!-- DOD ITEM 6 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-telemetry-num">DOD-06</span>
+<span class="material-symbols-outlined text-primary text-[18px]">smart_display</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Aprovação em Demonstração</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Apresentação do fluxo operacional funcional em ambiente de homologação (demo) validada pelo docente ou responsável pelo produto.
+        </p>
+<div class="mt-auto pt-space-xs flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span> Validado no Review
+        </div>
+</div>
+</div>
+</section>
+<!-- RODAPÉ OPERACIONAL DO INCREMENTO -->
+<footer class="p-space-xl bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="font-telemetry-num text-label-sm text-on-surface-variant">SGA • ABDUZ.AI PLATFORM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/60">DISCIPLINA DE MÉTODOS ÁGEIS &amp; ENGENHARIA DE SOFTWARE</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span>Última sincronização quântica:</span>
+<span class="font-telemetry-num text-primary">22/10/2026 14:32 UTC</span>
+</div>
+</footer>
+</div></main></div></body></html>
